@@ -35,7 +35,7 @@
     }
   ],
   "author": "Intercom",
-  "license": "MIT License",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/intercom/intercom-cordova/issues"
   },
