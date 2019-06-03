@@ -62,18 +62,6 @@ public class IntercomBridge extends CordovaPlugin {
 
             CordovaHeaderInterceptor.setCordovaVersion(context, "6.2.0");
 
-            switch (IntercomPushManager.getInstalledModuleType()) {
-                case GCM: {
-                    String senderId = getSenderId(context);
-
-                    if (senderId != null) {
-                        LumberMill.getLogger().d("Using GCM Sender ID: " + senderId);
-                        IntercomPushManager.cacheSenderId(context, senderId);
-                    }
-                    break;
-                }
-            }
-
             //Get app credentials from config.xml or the app bundle if they can't be found
             String apiKey = preferences.getString("intercom-android-api-key", "");
             String appId = preferences.getString("intercom-app-id", "");
