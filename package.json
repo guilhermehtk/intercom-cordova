@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-intercom",
-  "version": "6.2.1",
+  "version": "6.2.2",
   "description": "Official Cordova/PhoneGap plugin for Intercom",
   "cordova": {
     "id": "cordova-plugin-intercom",
